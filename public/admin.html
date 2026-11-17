@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <header class="topbar">
+        <h2>LUMIÈRE</h2>
+        <a href="index.html">Sair</a>
+    </header>
+
+    <main class="auth-layout">
+        <section class="panel">
+            <h1>Painel administrativo</h1>
+            <p>Gerencie os clientes e cadastros da LUMIÈRE.</p>
+
+            <div class="admin-info">
+                <h3>Clientes cadastrados</h3>
+                <p id="totalPessoas">Carregando...</p>
+            </div>
+
+            <div class="admin-menu">
+                <a href="cadastro.html">Cadastrar cliente</a>
+                <a href="get.html">Consultar clientes</a>
+                <a href="put.html">Editar cadastro</a>
+                <a href="delete.html">Excluir cadastro</a>
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

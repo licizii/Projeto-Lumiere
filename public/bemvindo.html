@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="bemvindo.html" class="logo">LUMIÈRE</a>
+
+        <nav>
+            <a href="bemvindo.html" class="navlink active">Início</a>
+            <a href="get.html" class="navlink active">Cadastrados</a>
+            <a href="put.html" class="navlink active">Alterar Cadastro</a>
+            <a href="index.html" class="navlink" onclick="sair()">Sair</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="eyebrow">BEM-VINDO À LUMIÈRE</p>
+
+                <h1>Seu estilo.<br><span>Sua essência.</span></h1>
+
+                <p id="saudacao">
+                    É um prazer ter você conosco!
+                </p>
+
+                <div class="hero-actions">
+                    <a href="index.html" class="fake-cta" onclick="sair()">
+                        Sair da conta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="heading-row">
+                <h2>Explore nossas coleções</h2>
+            </div>
+
+            <div class="poster-grid">
+                <div class="poster p1">
+                    <span class="badge">COLEÇÃO</span>
+                    <strong>Roupas</strong>
+                    <small>LUMIÈRE</small>
+                </div>
+
+                <div class="poster p2">
+                    <span class="badge">COLEÇÃO</span>
+                    <strong>Calçados</strong>
+                    <small>LUMIÈRE</small>
+                </div>
+
+                <div class="poster p3">
+                    <span class="badge">COLEÇÃO</span>
+                    <strong>Acessórios</strong>
+                    <small>LUMIÈRE</small>
+                </div>
+
+                <div class="poster p4">
+                    <span class="badge">COLEÇÃO</span>
+                    <strong>Novidades</strong>
+                    <small>LUMIÈRE</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        LUMIÈRE • Sua moda, suas escolhas • SENAI
+    </footer>
+
+    <script>
+        const usuario = JSON.parse(sessionStorage.getItem("usuario"));
+
+        if (!usuario) {
+            window.location.href = "index.html";
+        } else {
+            document.getElementById("saudacao").textContent =
+                "Olá, " + usuario.nome + "! É um prazer ter você conosco.";
+        }
+
+        function sair() {
+            sessionStorage.removeItem("usuario");
+        }
+    </script>
+
+   
+</body>
+</html>

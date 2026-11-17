@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <header class="topbar">
+        <h2>LUMIÈRE</h2>
+        <a href="bemvindo.html">Voltar</a>
+    </header>
+
+    <main class="auth-layout">
+        <section class="panel">
+            <h1>Clientes cadastrados</h1>
+            <p>Consulte os dados dos clientes da LUMIÈRE.</p>
+
+            <input type="text" id="pesquisa" placeholder="Pesquisar por nome ou CPF">
+
+            <div id="listaPessoas">
+                Carregando clientes...
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    <script src="get.js"></script>
+</body>
+</html>

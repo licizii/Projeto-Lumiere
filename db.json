@@ -1,0 +1,67 @@
+{
+  "pessoas": [
+    {
+      "nome": "alice",
+      "email": "alice.n.ferreira@edu.senai.br",
+      "telefone": "11992991869",
+      "cpf": "49674314881",
+      "senha": "123",
+      "id": 1
+    },
+    {
+      "senha": null,
+      "administrador": "não",
+      "id": 2
+    },
+    {
+      "senha": null,
+      "administrador": "não",
+      "id": 3
+    },
+    {
+      "senha": null,
+      "administrador": "não",
+      "id": 4
+    },
+    {
+      "nome": "luana",
+      "sobrenome": "felix",
+      "cpf": "44054996833",
+      "telefone": "11993202413",
+      "email": "luana@oi.com",
+      "rua": "joao bourg",
+      "cep": "08720350",
+      "cidade": "Mogi das Cruzes",
+      "estado": "SP",
+      "senha": "12345",
+      "id": 5
+    },
+    {
+      "nome": "Bruno",
+      "sobrenome": "Messias",
+      "cpf": "11122233300",
+      "telefone": "11992999922",
+      "email": "bruno@messias",
+      "senha": "123456",
+      "rua": "avenida lalala",
+      "cep": "08720350",
+      "cidade": "Mogi das Cruzes",
+      "estado": "SP",
+      "administrador": "Não",
+      "id": 6
+    },
+    {
+      "nome": "Anderson",
+      "sobrenome": "Costa",
+      "cpf": "33366699911",
+      "telefone": "12345678911",
+      "email": "andersoncosta@gmail",
+      "rua": "senai nami jafet",
+      "cep": "08720350",
+      "cidade": "Mogi das Cruzes",
+      "estado": "SP",
+      "senha": "123456789",
+      "id": 7
+    }
+  ]
+}

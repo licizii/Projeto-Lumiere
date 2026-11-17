@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar clientes | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <header class="topbar">
+        <h2>LUMIÈRE</h2>
+        <a href="bemvindo.html">Voltar</a>
+    </header>
+
+    <main class="auth-layout">
+        <section class="panel">
+            <h1>Editar cadastro</h1>
+            <p>Informe o CPF do cliente para localizar seus dados.</p>
+
+            <form id="formBuscar">
+                <input type="number" id="cpfBusca" placeholder="CPF do cliente" required>
+                <br> <br>
+                <button type="submit">Buscar cliente</button>
+            </form>
+
+            <form id="formEditar" style="display:none;">
+
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="sobrenome" placeholder="Sobrenome">
+                <input type="text" id="cpf" placeholder="CPF" required>
+                <input type="text" id="telefone" placeholder="Telefone">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="password" id="senha" placeholder="Nova senha (opcional)">
+                <input type="text" id="rua" placeholder="Rua">
+                <input type="text" id="cep" placeholder="CEP">
+                <input type="text" id="cidade" placeholder="Cidade">
+                <input type="text" id="estado" placeholder="Estado">
+
+                
+                <button type="submit">Salvar alterações</button>
+            </form>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    <script src="put.js"></script>
+</body>
+</html>

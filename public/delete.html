@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir clientes | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <header class="topbar">
+        <h2>LUMIÈRE</h2>
+        <a href="admin.html">Voltar</a>
+    </header>
+
+    <main class="auth-layout">
+        <section class="panel">
+            <h1>Excluir cadastro</h1>
+            <p>Informe o ID do cliente que deseja excluir.</p>
+
+            <form id="formExcluir">
+                <input
+                    type="number"
+                    id="id"
+                    placeholder="ID do cliente"
+                    min="1"
+                    required
+                >
+
+                <button type="submit">Excluir cliente</button>
+            </form>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    <script src="delete.js"></script>
+</body>
+</html>

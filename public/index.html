@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | LUMIÈRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <header class="topbar">
+        <a class="logo" href="index.html">LUMIÈRE</a>
+        <span class="top-caption">Moda que combina com você</span>
+    </header>
+
+    <main class="auth-layout">
+
+        <section class="intro">
+            <div class="eyebrow">SEU ESTILO COMEÇA AQUI</div>
+
+            <h1>
+                Vista quem você é.<br>
+                <em>Inspire novas versões.</em>
+            </h1>
+
+            <p>
+                Descubra as últimas tendências, explore novas coleções
+                e encontre peças que traduzem sua personalidade.
+            </p>
+
+            <div class="decor-row">
+                <span>ROUPAS</span>
+                <span>CALÇADOS</span>
+                <span>ACESSÓRIOS</span>
+            </div>
+        </section>
+
+        <section class="panel auth-panel">
+
+            <p class="panel-kicker">QUE BOM TER VOCÊ AQUI!</p>
+
+            <h2>Entre na sua conta</h2>
+
+            <p class="muted">
+                Acesse sua conta e continue descobrindo seu próximo look favorito.
+            </p>
+
+            <form id="formLogin">
+
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                >
+
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button type="submit">
+                    Entrar <span aria-hidden="true">→</span>
+                </button>
+
+            </form>
+
+            <p class="hint" id="mensagem" role="status"></p>
+
+            <p class="foot-text">
+                Ainda não faz parte da LUMIÈRE?
+                <a href="cadastro.html">Crie sua conta</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        LUMIÈRE • Sua moda, suas escolhas • SENAI
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
